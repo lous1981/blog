@@ -32,3 +32,9 @@ appendonly yes
 :wq保存
 ```
 
+**5. 跟随docker重启**
+
+```
+# sudo docker update redis --restart=always
+```
+

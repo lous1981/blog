@@ -36,7 +36,7 @@ skip-character-set-client-handshake
 skip-name-resolve
 ```
 
-[^注意]: 解决Mysql连接慢的问题，在配置文件中加入如下，并重启mysql 
+[^注意]: 解决Mysql连接慢的问题，在配置文件中加入如下，并重启mysql ，命令： docker restart mysql
 
 [mysqld]
 
@@ -45,4 +45,10 @@ skip-name-resolve
 解释：
 
 skip-name-resolve：跳过域名解析
+
+**4. 跟随docker重启**
+
+```
+# sudo docker update mysql --restart=always
+```
 
